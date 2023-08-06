@@ -13,11 +13,8 @@ const markupGallery = galleryItems.map(({ preview, original, description }) => `
  </a>
  </li>`).join("");
 
-
 galleryEl.insertAdjacentHTML("afterbegin", markupGallery);
  
-
-
 const galleryUsage = new SimpleLightbox(".gallery a", {
     captionsData: "alt",
     captionDelay: 250,
@@ -32,4 +29,3 @@ const galleryUsage = new SimpleLightbox(".gallery a", {
 
 
 
-// console.log(galleryItems);

@@ -1,6 +1,6 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-// console.log(galleryItems);
+
 
 const galleryEl = document.querySelector(".gallery");
 
@@ -15,7 +15,7 @@ const markupGallery = galleryItems.map(({ preview, original, description }) => `
     alt="${description}"/>
  </a>
  </li>`).join("");
-// console.log(markupGallery)
+
 
 galleryEl.insertAdjacentHTML("afterbegin", markupGallery);
 
@@ -37,16 +37,3 @@ const handleImgClick = (event) => {
   onClickImgToOpenModal();
 };
 galleryEl.addEventListener('click', handleImgClick);
-
-
-
-
-
-
-
-
-
-
-console.log(galleryEl);
-
-
